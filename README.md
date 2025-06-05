@@ -1,6 +1,6 @@
 # NFL-award-winners-web-scrapper
 
-**NFL Awards by Year (IN PROGRESS)**
+**NFL Awards by Year**
 
 A command-line application that scrapes and displays NFL award winners and Super Bowl champions by year. The project consists of a C++ menu system that calls Python scripts to retrieve data from Pro Football Reference.
 Features
@@ -8,6 +8,7 @@ Features
 AP MVP Winners (1961-2024): Get Associated Press Most Valuable Player award winners
 AP DPOY Winners (1971-2024): Get Associated Press Defensive Player of the Year award winners
 Super Bowl Winners (1967-2025): Get Super Bowl championship teams
+Draft Position: Find the draft position of the player inputted
 Interactive menu system with input validation
 Web scraping from Pro Football Reference
 
@@ -23,10 +24,10 @@ requests
 
 **Select from the menu options:**
 
-1 - AP MVP winner lookup
-2 - AP DPOY winner lookup
-3 - Super Bowl winner lookup
-4 - In progress (placeholder)
+1 - AP MVP winner 
+2 - AP DPOY winner 
+3 - Super Bowl winner 
+4 - Draft Position
 5 - Exit
 
 
@@ -49,13 +50,15 @@ dpoy.py         # AP DPOY winner scraper
 
 superbowl.py    # Super Bowl winner scraper
 
+playerFinder.py #draft position scraper
+
 **Example Output**
 
-NFL award winners by year!
+NFL award winners and player draft position!
 1. AP MVP
 2. AP DPOY
 3. SUPERBOWL WINNER
-4. IN PROGRESS
+4. Draft Position
 5. Exit
 1
 NFL AP MVP winner by year!
