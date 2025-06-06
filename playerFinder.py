@@ -72,6 +72,8 @@ def urlChecker(urlList, fullName):
         soup = BeautifulSoup(response.content, 'html.parser')
         strongTag = soup.find('strong')
         name = strongTag.get_text().strip()
+        #for names with periods ex. D.K. Metcalf
+        name = name.replace(".", "")
         if(firstName in name and lastName in name):
             print(name,':')
             playerInfo = soup.find('strong', string='Draft')
